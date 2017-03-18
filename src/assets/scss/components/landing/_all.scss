@@ -201,3 +201,42 @@ a {
   color: #0d113d;
   border-color: #0d113d;
 }
+
+//----------------------------------------------
+
+.contact-area {
+  width: 100%;
+  height: 562px;
+  margin-top: 104px;
+}
+
+.contact-area p,
+.contact-area h3 {
+  text-align: center;
+}
+
+.contact-area img {
+  text-align: center;
+}
+
+.pic-block-contact,
+.pic-block2-contact {
+  text-align: center;
+}
+
+.pic-block2-contact img {
+  margin-top: 21px;
+  margin-bottom: 13px;
+}
+
+.map-wrapper {
+  //position: absolute;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 440px;
+}
