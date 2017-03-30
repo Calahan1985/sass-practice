@@ -243,8 +243,35 @@ a {
   height: 440px;
 }
 
-//------------------------------------------------------
+//about.html------------------------------------------------------
 
 .smallone {
   height: 2000px;
 }
+
+//stickyHeader------------------------------------------------------
+
+.sticky-header {
+  width: 100%;
+}
+
+.stickyHead {
+  text-align: center;
+  background-color: #00DD00;
+  font-size: medium;
+  height: 80px;
+
+}
+
+.blackPart {
+  background-color: #0a0a0a;
+  height: 60px;
+  padding: 50px 0;
+  width: 100%;
+  transition: 1s ease-in-out;
+  &.is-stuck {
+    height: 50px;
+  }
+}
+
+//accordion---------------------------------------------------------

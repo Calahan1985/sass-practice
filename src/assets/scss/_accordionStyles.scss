@@ -1,0 +1,18 @@
+.accordion-list h2 {
+  color: #955ae7;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.accordion:before {
+  position: absolute;
+  top: 50%;
+  #{$global-right}: 1rem;
+  margin-top: -0.5rem;
+  content: '+';
+}
+
+.is-active > &::before {
+  content: '\2013';
+}
