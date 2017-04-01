@@ -1,0 +1,75 @@
+.iterator-page {
+  width: 100%;
+  height: 300px;
+  background-color: #c5c8c6;
+  padding: 20px;
+  border-color:rgba(255, 255, 255, 0);
+  border-width: medium;
+}
+
+$width: 40;
+
+@for $i from 1 to 6 {
+  .iteration-#{$i} {
+    width: #{$width * $i}px;
+    height: 40px;
+    background-color: #0a0a0a;
+  }
+}
+
+//list ==============================================
+
+.list-page {
+  width: 100%;
+  height: 300px;
+  background-color: #c5c8c6;
+  padding: 20px;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+@each $var in (
+  first,
+  second,
+  third,
+  fourth,
+  fifth
+){
+  .#{$var}:before {
+    content: "#{$var}";
+  }
+  .#{$var} {
+    background-color: #4a90e2;
+    margin: 10px;
+    padding-left: 10px;
+  }
+}
+
+//colored list ======================================
+
+.colored-page {
+  width: 100%;
+  height: 300px;
+  background-color: #c5c8c6;
+  padding: 20px;
+  font-size: 16px;
+  color: #0a0a0a;
+}
+
+@each $var in (
+        first #dee261 #e24047,
+        second #5440e2 #42e284,
+        third #e1e2dd #3319e2,
+        fourth #e2ac8a #85c7e2,
+        fifth #42abe2 #e2af17
+){
+  .#{$var}:before {
+    content: "#{$var}";
+  }
+  .#{nth($var, 1)} {
+    background-color: nth($var, 2);
+    color: nth($var, 3);
+    margin: 10px;
+    padding-left: 10px;
+  }
+}
