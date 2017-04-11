@@ -1,0 +1,20 @@
+
+@mixin font($font-family, $type, $font-weight, $font-style) {
+  @font-face {
+    font-family: #{$font-family};
+    src: url('../fonts/#{$font-family}-#{$type}.eot');
+    src: url('../fonts/#{$font-family}-#{$type}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$font-family}-#{$type}.woff2') format('woff2'),
+         url('../fonts/#{$font-family}-#{$type}.woff') format('woff'),
+         url('../fonts/#{$font-family}-#{$type}.svg##{$font-family}#{$type}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font($font-family:'oswald', $type:'extralight', $font-weight:'normal', $font-style:'normal');
+@include font($font-family:'oswald', $type:'light', $font-weight:'normal', $font-style:'normal');
+@include font($font-family:'oswald', $type:'regular', $font-weight:'normal', $font-style:'normal');
+@include font($font-family:'oswald', $type:'medium', $font-weight:'normal', $font-style:'normal');
+@include font($font-family:'oswald', $type:'semibold', $font-weight:'normal', $font-style:'normal');
+@include font($font-family:'oswald', $type:'bold', $font-weight:'normal', $font-style:'normal');
